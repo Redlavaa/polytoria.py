@@ -6,6 +6,8 @@
   
 [Installation](#installation)
 [Usage](#usage)
+[license](#license)
+[Credits](#credits)
 
 <div align="left">
 
