@@ -2,16 +2,16 @@
   <img src="/logo.png" alt="Logo" width="200"/>
 </p>
 
-<div align="center">
+<p align="center">
+  <strong style="font-size: 2em;">Polytoria.py</strong>
+</p>
 
-# Polytoria.py
-  
-[Installation](#Installation)
-[Usage](#Usage)
-[license](#License)
-[Credits](#Credits)
-
-<div align="left">
+<p align="center">
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#license">License</a> •
+  <a href="#credits">Credits</a>
+</p>
 
 # Introduction
 Polytoria.py is a wrapper that lets you easily use the polytoria api.
