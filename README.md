@@ -11,10 +11,14 @@
 [license](#License)
 [Credits](#Credits)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.7+-blue.svg"/>
+  <img src="https://img.shields.io/badge/license-MIT-green.svg"/>
+</p>
+
+
 
 <div align="left">
-
-![GitHub top language](https://img.shields.io/github/languages/top/Redlavaa/polytoria.py)
 
 # Introduction
 Polytoria.py is a wrapper that lets you easily use the polytoria api.
