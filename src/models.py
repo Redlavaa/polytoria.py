@@ -6,8 +6,12 @@ class User:
         self.username = data.get("username")
         self.description = data.get("description")
         self.thumbnail = data.get("thumbnail")
-        self.avatar = self.thumbnail.get("avatar")
-        self.icon = self.thumbnail.get("icon")
+        if isinstance(self.thumbnail, dict):
+            self.avatar = self.thumbnail.get("avatar")
+            self.icon = self.thumbnail.get("icon")
+        else:
+            self.avatar = None
+            self.icon = None
         self.playing = data.get("playing")
         self.networth = data.get("netWorth")
         self.placevisits = data.get("placeVisits")
@@ -31,9 +35,10 @@ class Item:
         self.accessorytype = data.get("accessoryType")
         self.name = data.get("name")
         self.description = data.get("description")
-        self.tags = data.get("tags" "")
-        self.creator = data.get("creator")
-        self.creatorname = self.creator.get("type")
+        self.tags = data.get("tags", []) or []
+        creator = data.get("creator")
+        self.creator = creator if isinstance(creator, dict) else {}
+        self.creatorname = self.creator.get("name")
         self.creatorid = self.creator.get("id")
         self.thumbnail = data.get("thumbnail")
         self.price = data.get("price")
@@ -45,4 +50,4 @@ class Item:
 
 
     def __repr__(self):
-        return f"id={self.id} username={self.username} description={self.description}"
+        return f"id={self.id} username={self.name} description={self.description}"

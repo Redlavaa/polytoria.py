@@ -8,9 +8,9 @@ async def main():
 
 
 
-    User = await polytoria.user(22783)
+    item = await polytoria.item(170053)
 
-    print(User.forumposts)
+    print(item.price)
 
 if __name__ == "__main__":
     asyncio.run(main())
