@@ -1,3 +1,5 @@
+from src.api_client import APIClient
+
 class User:
     def __init__(self, data:dict, client):
         self.client = client
@@ -48,6 +50,13 @@ class Item:
         self.sales = data.get("sales")
         self.favorites = data.get("favorites")
 
+        self._owners = None
+
+    async def owners(self):
+        if self._owners == None:
+            self._owners = await self.client.fetch_data(f"store/{self.id}/owners", base_url="https://api.polytoria.com/v1/")
+        return self._owners
+
 
     def __repr__(self):
-        return f"id={self.id} username={self.name} description={self.description}"
+        return f"id={self.id} name={self.name} description={self.description}"
