@@ -6,12 +6,23 @@
 
 # Polytoria.py
   
-[Installation](#installation)
-[Usage](#usage)
-[license](#license)
-[Credits](#credits)
+[Installation](#Installation)
+[Usage](#Usage)
+[license](#License)
+[Credits](#Credits)
 
 <div align="left">
 
-# polytoria.py
+# Introduction
 Polytoria.py is a wrapper that lets you easily use the polytoria api.
+
+# Installation
+
+place holder
+
+# Usage
+
+```python
+polytoria.user(id)
+polytoria.item(id)
+```
