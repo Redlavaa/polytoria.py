@@ -1,4 +1,4 @@
-![Polytoria Logo](images/logo.png)
+![Polytoria Logo](/logo.png)
 
 
 # polytoria.py
