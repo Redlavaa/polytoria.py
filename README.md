@@ -10,10 +10,11 @@
 [Usage](#Usage)
 [license](#License)
 [Credits](#Credits)
-![GitHub top language](https://img.shields.io/github/languages/top/Redlavaa/polytoria.py)
 
 
 <div align="left">
+
+![GitHub top language](https://img.shields.io/github/languages/top/Redlavaa/polytoria.py)
 
 # Introduction
 Polytoria.py is a wrapper that lets you easily use the polytoria api.
