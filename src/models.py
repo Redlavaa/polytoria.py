@@ -1,0 +1,47 @@
+class User:
+    def __init__(self, data:dict, client):
+        self.client = client
+
+        self.id = data.get("id")
+        self.username = data.get("username")
+        self.description = data.get("description")
+        self.thumbnail = data.get("thumbnail")
+        self.avatar = self.thumbnail.get("avatar")
+        self.icon = self.thumbnail.get("icon")
+        self.playing = data.get("playing")
+        self.networth = data.get("netWorth")
+        self.placevisits = data.get("placeVisits")
+        self.forumposts = data.get("forumPosts")
+        self.assetSales = data.get("assetSales")
+        self.membershipType = data.get("membershipType")
+        self.istaff = data.get("isStaff")
+        self.userroleclass = data.get("userRoleClass")
+        self.joindate = data.get("registeredAt")
+        self.lastseen = data.get("lastSeenAt")
+
+    def __repr__(self):
+        return f"id={self.id} username={self.username} description={self.description}"
+    
+class Item:
+    def __init__(self, data:dict, client):
+        self.client = client
+
+        self.id = data.get("id")
+        self.type = data.get("type")
+        self.accessorytype = data.get("accessoryType")
+        self.name = data.get("name")
+        self.description = data.get("description")
+        self.tags = data.get("tags" "")
+        self.creator = data.get("creator")
+        self.creatorname = self.creator.get("type")
+        self.creatorid = self.creator.get("id")
+        self.thumbnail = data.get("thumbnail")
+        self.price = data.get("price")
+        self.studprice = data.get("priceInStuds")
+        self.averageprice = data.get("averagePrice")
+        self.version = data.get("version")
+        self.sales = data.get("sales")
+
+
+    def __repr__(self):
+        return f"id={self.id} username={self.username} description={self.description}"
