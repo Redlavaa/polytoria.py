@@ -10,6 +10,8 @@
 [Usage](#Usage)
 [license](#License)
 [Credits](#Credits)
+![GitHub top language](https://img.shields.io/github/languages/top/Redlavaa/polytoria.py)
+
 
 <div align="left">
 
