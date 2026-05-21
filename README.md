@@ -50,3 +50,9 @@ Everything starts with the main polytoria module, followed by the specific resou
 | `userroleclass` | `str` |
 | `joindate` | `str` |
 | `lastseen` | `str` |
+
+### Polytoria.Item(id)
+
+### Polytoria.Place(id)
+
+### Polytoria.Guild(id)
