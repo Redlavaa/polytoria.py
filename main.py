@@ -7,10 +7,11 @@ async def main():
     
     item = await polytoria.item(170053)
     place = await polytoria.place(1)
+    guild = await polytoria.guild(1)
 
     print(item.name)
-    print(item.price)
-    print(place.creator)
+    print(place.name)
+    print(guild.name)
 
 if __name__ == "__main__":
     asyncio.run(main())

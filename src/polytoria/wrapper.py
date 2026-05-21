@@ -1,5 +1,5 @@
-from src.polytoria.api_client import APIClient
-from src.polytoria.models import User, Item, Place
+from src.api_client import APIClient
+from src.models import User, Item, Place
 
 class Polytoria:
     def __init__(self, browser: str = "chrome"):
@@ -20,5 +20,11 @@ class Polytoria:
     async def place(self, place_id: int) -> Place:
  
         raw_data = await self._client.fetch_data(f"places/{place_id}", base_url="https://api.polytoria.com/v1/")
+        
+        return Place(raw_data, self._client)
+    
+    async def guild(self, guild_id: int) -> Guild:
+ 
+        raw_data = await self._client.fetch_data(f"guilds/{guild_id}", base_url="https://api.polytoria.com/v1/")
         
         return Place(raw_data, self._client)
