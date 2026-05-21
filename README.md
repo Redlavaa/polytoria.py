@@ -31,9 +31,21 @@ place holder
 
 ### Polytoria.User(id)
 
-| Attribute | Type | Description |
-| :--- | :--- | :--- |
-| `name` | `str` | The username of the player. |
-| `description` | `str` | The user's profile description. |
-| `join_date` | `str` | The date the user joined Polytoria. |
-| `is_admin` | `bool` | Whether the user is an administrator. |
+| Attribute | Type |
+| :--- | :--- |
+| `id` | `int` |
+| `username` | `str` |
+| `description` | `str` |
+| `thumbnail` | `dict` |
+| `avatar` | `str` |
+| `icon` | `str` |
+| `playing` | `int` / `None` |
+| `networth` | `int` |
+| `placevisits` | `int` |
+| `forumposts` | `int` |
+| `assetSales` | `int` |
+| `membershipType` | `str` |
+| `istaff` | `bool` |
+| `userroleclass` | `str` |
+| `joindate` | `str` |
+| `lastseen` | `str` |
