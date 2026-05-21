@@ -1,6 +1,8 @@
 from src.polytoria.api_client import APIClient
+from pydantic import BaseModel, Field
+from typing import Optional
 
-class User:
+class User(BaseModel):
     def __init__(self, data:dict, client):
         self.client = client
 

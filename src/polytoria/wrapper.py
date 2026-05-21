@@ -1,5 +1,7 @@
 from src.polytoria.api_client import APIClient
 from src.polytoria.models import User, Item, Place, Guild
+from pydantic import BaseModel, Field
+from typing import Optional
 
 class Polytoria:
     def __init__(self, browser: str = "chrome"):
