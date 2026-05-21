@@ -2,7 +2,7 @@ from curl_cffi.requests import AsyncSession
 
 class APIClient:
     def __init__(self, browser: str = "chrome", base_url:str = None):
-        self.base_url = base_url or "https://api.polytoria.com/v1"
+        self.base_url = base_url
         self.browser = browser
 
     async def fetch_data(self, endpoint:str, base_url:str = None, params: dict = None) -> dict:

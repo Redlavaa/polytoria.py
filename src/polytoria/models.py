@@ -17,7 +17,7 @@ class User:
         self.assetSales = data.get("assetSales")
         self.membershipType = data.get("membershipType")
         self.istaff = data.get("isStaff")
-        self.userroleclass = data.get("userRoleClass")
+        self.role = data.get("userRoleClass")
         self.joindate = data.get("registeredAt")
         self.lastseen = data.get("lastSeenAt")
 
@@ -75,7 +75,7 @@ class Place: # /api/places /v1/api/places/{id}
         self.accesstype = data.get("accessType")
         self.accessprice = data.get("accessPrice")
         self.createdat = data.get("createdAt")
-        self.updatedat = data.get("updatedAt")
+        self.updatedat= data.get("updatedAt")
 
     def __repr__(self):
         return f""
