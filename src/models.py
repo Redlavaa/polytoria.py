@@ -25,7 +25,7 @@ class User:
         self.joindate = data.get("registeredAt")
         self.lastseen = data.get("lastSeenAt")
 
-    def __repr__(self):
+    def __repr__(self): # used for debugging
         return f"id={self.id} username={self.username} description={self.description}"
     
 class Item:
@@ -38,10 +38,7 @@ class Item:
         self.name = data.get("name")
         self.description = data.get("description")
         self.tags = data.get("tags", []) or []
-        creator = data.get("creator")
-        self.creator = creator if isinstance(creator, dict) else {}
-        self.creatorname = self.creator.get("name")
-        self.creatorid = self.creator.get("id")
+        self.creator = data["creator"]["name"]
         self.thumbnail = data.get("thumbnail")
         self.price = data.get("price")
         self.studprice = data.get("priceInStuds")
@@ -60,3 +57,38 @@ class Item:
 
     def __repr__(self):
         return f"id={self.id} name={self.name} description={self.description}"
+    
+class Place: # /api/places /v1/api/places/{id}
+    def __init__(self, data:dict, client):
+        self.client = client
+
+        self.id = data.get("id")
+        self.name = data.get("name")
+        self.description = data.get("description")
+        self.creator = data["creator"]["name"]
+        self.thumbnail = data.get("thumbnail")
+        self.genre = data.get("genre")
+        self.maxplayers = data.get("maxPlayers")
+        self.isactive = data.get("isActive")
+        self.istoolsenabled = data.get("isToolsEnabled")
+        self.iscopyable = data.get("isCopyable")
+        self.visits = data.get("visits")
+        self.uniquevisits = data.get("uniqueVisits")
+        self.playing = data.get("playing")
+        self.rating = data.get("rating")
+        self.accesstype = data.get("accessType")
+        self.accessprice = data.get("accessPrice")
+        self.createdat = data.get("createdAt")
+        self.updatedat = data.get("updatedAt")
+
+    def __repr__(self):
+        return f""
+    
+class Guild: # /api/guilds/{id} /v1/guilds/{id}
+    def __init__(self, data:dict, client):
+        self.client = client
+
+        self.id = data.get("id")
+
+    def __repr__(self):
+        return f""
