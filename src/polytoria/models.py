@@ -1,4 +1,4 @@
-from src.api_client import APIClient
+from src.polytoria.api_client import APIClient
 
 class User:
     def __init__(self, data:dict, client):

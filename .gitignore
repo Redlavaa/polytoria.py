@@ -1,2 +1,5 @@
 /venv
 /generate
+/dist
+/src/polytoria.py.egg-info
+/src/__pycache__

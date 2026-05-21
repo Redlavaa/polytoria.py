@@ -1,4 +1,4 @@
-from src.wrapper import Polytoria
+from src.polytoria.wrapper import Polytoria
 import asyncio
 
 async def main():
