@@ -8,12 +8,8 @@ class User:
         self.username = data.get("username")
         self.description = data.get("description")
         self.thumbnail = data.get("thumbnail")
-        if isinstance(self.thumbnail, dict):
-            self.avatar = self.thumbnail.get("avatar")
-            self.icon = self.thumbnail.get("icon")
-        else:
-            self.avatar = None
-            self.icon = None
+        self.avatar = self.thumbnail.get("avatar")
+        self.icon = self.thumbnail.get("icon")
         self.playing = data.get("playing")
         self.networth = data.get("netWorth")
         self.placevisits = data.get("placeVisits")
