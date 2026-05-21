@@ -27,4 +27,4 @@ class Polytoria:
  
         raw_data = await self._client.fetch_data(f"guilds/{guild_id}", base_url="https://api.polytoria.com/v1/")
         
-        return Place(raw_data, self._client)
+        return Guild(raw_data, self._client)
