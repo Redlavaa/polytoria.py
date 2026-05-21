@@ -75,6 +75,59 @@ Everything starts with the main polytoria module, followed by the specific resou
 
 ### Polytoria.Item(id)
 
+| Attribute | Type |
+| :--- | :--- |
+| `id` | `int` |
+| `type` | `str` |
+| `accessorytype` | `str` |
+| `name` | `str` |
+| `description` | `str` |
+| `tags` | `list` |
+| `creator` | `str` |
+| `thumbnail` | `str` |
+| `price` | `int` / `None` |
+| `studprice` | `int` / `None` |
+| `averageprice` | `int` / `None` |
+| `version` | `int` / `str` |
+| `sales` | `int` |
+| `favorites` | `int` |
+
 ### Polytoria.Place(id)
 
+| Attribute | Type |
+| :--- | :--- |
+| `id` | `int` |
+| `name` | `str` |
+| `description` | `str` |
+| `creator` | `str` |
+| `thumbnail` | `str` |
+| `genre` | `str` |
+| `maxplayers` | `int` |
+| `isactive` | `bool` |
+| `istoolsenabled` | `bool` |
+| `iscopyable` | `bool` |
+| `visits` | `int` |
+| `uniquevisits` | `int` |
+| `playing` | `int` |
+| `rating` | `float` |
+| `accesstype` | `str` |
+| `accessprice` | `int` / `None` |
+| `createdat` | `str` |
+| `updatedat` | `str` |
+
 ### Polytoria.Guild(id)
+
+| Attribute | Type |
+| :--- | :--- |
+| `id` | `int` |
+| `name` | `str` |
+| `description` | `str` |
+| `creator` | `str` |
+| `thumbnail` | `str` |
+| `banner` | `str` |
+| `color` | `str` |
+| `jointype` | `str` |
+| `membercount` | `int` |
+| `vaultbalance` | `int` |
+| `isverified` | `bool` |
+| `createdat` | `str` |
