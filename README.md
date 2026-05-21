@@ -24,7 +24,9 @@ Polytoria.py is a wrapper that lets you easily use the polytoria api inside of p
 
 # Installation
 
-place holder
+```bash
+pip install polytoria.py
+```
 
 # Example
 ```python
