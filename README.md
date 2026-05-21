@@ -34,7 +34,7 @@ import asyncio
 
 async def main():
 
-  polytoria = Polytoria()
+  polytoria = Polytoria() # initalize the client
 
   user = await polytoria.user(1) # gets the user with the id 1
 
