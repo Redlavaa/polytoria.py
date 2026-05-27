@@ -6,7 +6,7 @@ class APIClient:
         self.browser = browser
 
     async def fetch_data(self, endpoint:str, base_url:str = None, params: dict = None) -> dict:
-        url = f"{self.base_url}/{endpoint}"
+        url = f"{base_url or self.base_url}/{endpoint}"
 
         async with AsyncSession(impersonate=self.browser) as session:
             try:

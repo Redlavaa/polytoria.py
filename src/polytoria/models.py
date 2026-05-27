@@ -21,6 +21,14 @@ class User:
         self.joindate = data.get("registeredAt")
         self.lastseen = data.get("lastSeenAt")
 
+        self._linked = None
+
+    async def linked(self):
+        if self._linked == None:
+            self._linked = await self.client.fetch_data(f"users/{self.id}/linked", base_url="https://api.polytoria.com/v1/")
+        return self._linked
+
+
     def __repr__(self): # used for debugging
         return f"id={self.id} username={self.username} description={self.description}"
     
