@@ -31,12 +31,12 @@ pip install polytoria.py
 # Example
 ```python
 
-import Polytoria
+import polytoria
 import asyncio
 
 async def main():
 
-  polytoria = Polytoria() # initalize the client
+  polytoria = polytoria() # initalize the client
 
   user = await polytoria.user(1) # gets the user with the id 1
 
