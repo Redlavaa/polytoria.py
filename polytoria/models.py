@@ -114,3 +114,12 @@ class Forum: # /v1/forum
 
     def __repr__(self):
         return f""
+
+class user2id:
+    def __init__(self, data:dict, client):
+        self.client = client
+
+        self.id = data.get("id")
+
+    def __repr__(self):
+        return f""
