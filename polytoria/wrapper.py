@@ -1,5 +1,5 @@
 from .api_client import APIClient
-from .models import User, Item, Place, Guild
+from .models import User, Item, Place, Guild, User2id
 
 class Polytoria:
     def __init__(self, browser: str = "chrome"):
