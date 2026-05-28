@@ -32,4 +32,4 @@ class Polytoria:
     async def user2id(self, username: str) -> User2id:
         raw_data = await self._client.fetch_data(f"users/find?username={username}", base_url="https://api.polytoria.com/v1/")
         
-        return user2id(raw_data, self._client)
+        return User2id(raw_data, self._client)
