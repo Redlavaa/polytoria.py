@@ -11,3 +11,6 @@ dependencies = ["curl-cffi"]
 
 [tool.setuptools]
 packages = ["polytoria"]
+
+[tool.setuptools.package-dir]
+"" = "."
