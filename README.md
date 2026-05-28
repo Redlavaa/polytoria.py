@@ -72,7 +72,7 @@ Everything starts with the main polytoria module, followed by the specific resou
 | `userroleclass` | `str` |
 | `joindate` | `str` |
 | `lastseen` | `str` |
-| `linked` | `dict` |
+| `linked()` | `dict` |
 
 ### Polytoria.Item(id)
 
