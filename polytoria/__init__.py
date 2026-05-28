@@ -1,3 +1,5 @@
 from .wrapper import Polytoria
 
-__all__ = ["Polytoria"]
+polytoria = Polytoria()
+
+__all__ = ["Polytoria", "polytoria"]
