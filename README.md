@@ -137,3 +137,9 @@ Everything starts with the main polytoria module, followed by the specific resou
 | Attribute | Type |
 | :--- | :--- |
 | `id` | `int` |
+
+### Polytoria.download(id)
+| Attribute | Type |
+| :--- | :--- |
+| `mesh()` | `str` |
+| `texture()` | `str` |
