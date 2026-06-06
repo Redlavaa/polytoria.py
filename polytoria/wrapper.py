@@ -35,7 +35,4 @@ class Polytoria:
         return User2id(raw_data, self._client)
 
     async def download(self, asset_id: int) -> Download:
-        raw_data = await self._client.fetch_data(f"assets/serve-mesh/{asset_id}", base_url="https://api.polytoria.com/v1/")
-        
-        return Download(raw_data, self._client)
-
+        return Download({"id": asset_id}, self._client)
