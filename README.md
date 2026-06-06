@@ -34,9 +34,9 @@ pip install polytoria.py
 import polytoria
 import asyncio
 
-async def main():
+polytoria = polytoria.client # initalize the client
 
-  polytoria = polytoria.client # initalize the client
+async def main():
 
   user = await polytoria.user(1) # gets the user with the id 1
 
